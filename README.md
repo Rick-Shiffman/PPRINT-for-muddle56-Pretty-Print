@@ -1,4 +1,4 @@
-# PPRINT-2-muddle56-Pretty-Print
+# PPRINT-for-muddle56-Pretty-Print
 
 <PPRINT ATOM> pretty prints the function assigned to ATOM./
 
