@@ -305,7 +305,8 @@ PP	;"OBLIST"
 	       T)
 	      (ELSE
 	       <REPEAT ()
-		  <COND (<L? <LENGTH .ML> 2> <RETURN #FALSE ()>) 
+		  ;"<COND (<L? <LENGTH .ML> 2> <RETURN #FALSE ()>) Now matches bot ES: and TT:"
+		  <COND (<L=? <LENGTH .ML> 2> <RETURN #FALSE ()>)
 			(<NOT <==? <TYPE <2 .ML>> FORM>> <RETURN #FALSE ()>)
 			(<EMPTY? <2 .ML>> <RETURN #FALSE()>)
 			(<FLATSIZE <1 <2 .ML>>
